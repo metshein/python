@@ -1,3 +1,4 @@
+# Lisasin muudatuse
 # ARVESTUSTÖÖ - Python
 # PANE SIIA OMA NIMI
 ######## LOTOVÕIDUD ########
