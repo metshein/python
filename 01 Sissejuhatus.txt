@@ -1,5 +1,0 @@
-https://web.htk.tlu.ee/digitaru/programmeerimine/chapter/algoritm/
-https://web.htk.tlu.ee/digitaru/programmeerimine/chapter/programm/
-https://web.htk.tlu.ee/digitaru/programmeerimine/chapter/andmetuubid/
-https://web.htk.tlu.ee/digitaru/programmeerimine/chapter/muutujad/
-https://web.htk.tlu.ee/digitaru/programmeerimine/chapter/sisend-kasutajalt-input/
