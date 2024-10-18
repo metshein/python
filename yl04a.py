@@ -2,6 +2,15 @@
 # Ülesanded 04
 
 
+# 3. Faili allalaadimine
+try:
+    failiSuurus = int(input("Sisesta faili suurus (MB): "))
+    downKiirus = int(input("Sisesta allalaadimise kiirus (MB/s): "))
+    aeg = failiSuurus / downKiirus
+    print(f"Allalaadimiseks kulub {aeg:0.2f} sekundit")
+except:
+    print("Tegid sisestamisel vea!")
+
 #2. Raamatute allahindlus
 ale = 0.3
 kogus = 3
