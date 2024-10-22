@@ -6,17 +6,17 @@ import math
 # Redel
 ## Matem
 korgus = 4.4
-nurk = 53
+nurk = math.radians(53)
 
 kaugus = abs(korgus / math.tan(nurk))
 c = math.sqrt((korgus**2) + (kaugus**2))
 print(kaugus, c)
 #Joonis
-kordaja = 20
+kordaja = 50
 turtle.fd(kaugus*kordaja)
 turtle.left(90)
 turtle.fd(korgus*kordaja)
-turtle.left(180-67)
+turtle.left(180-37)
 turtle.fd(c*kordaja)
 
 
