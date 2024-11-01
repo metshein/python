@@ -61,38 +61,46 @@ for nimi in unikaalsed_nimed:
 
 
 # Sulle on saadetud õpilaste keskmised hinded, mille lisasid loendisse. Eralda hinded ning leia kogu rühma parim ja kehvem tulemus ning keskmine hinne.
-# ryhma_hinded = ["Mari 4.9", "Jüri 3.1", "Kadri 4.6", "Marko 4.7", "Liis 4.9", "Andres 4.2", "Anu 4.7", "Martin 4.2", "Piret 4.2", "Tõnu 4.1"]
+ryhma_hinded = ["Mari 4.9", "Jüri 3.1", "Kadri 4.6", "Marko 4.7", "Liis 4.9", "Andres 4.2", "Anu 4.7", "Martin 4.2", "Piret 4.2", "Tõnu 4.1"]
+hinded = []
 
+for i in ryhma_hinded:
+    hinded.append(float(i.split(" ")[1]))
 
-
+print(f"Parim tulemus {max(hinded)}")
+print(f"Halvim tulemus {min(hinded)}")
+print(f"Keskmine tulemus {sum(hinded)/len(hinded)}")
 
 # Koosta programm, mis genereerib ja kuvab korrutustabeli, kus iga number korrutatakse iseendaga:
 # Näiteks:
 # 0 x 0 = 0
 # 1 x 1 = 1
 # 2 x 2 = 4
-# 3 x 3 = 9
-# 4 x 4 = 16
-# 5 x 5 = 25
-# 6 x 6 = 36
-# 7 x 7 = 49
-# 8 x 8 = 64
-# 9 x 9 = 81
-# 10 x 10 = 100
+
+for i in range(11):
+    print(f"{i} x {i} = {i*i}")
+
 # Loo programm, mis loob suvalised tehted 1-100 arvudega.
 # Kasuta tsükli puhul alakriipsu
 # kasuta suvalise tehte märgi jaoks loendit ja sealt suvalise märgi leidmiseks random.choice()
 # Näiteks:
 # 7 – 2=
 # 45 * 69=
-# 71 – 45=
-# 84 / 57=
-# 59 * 87=
-# 84 – 71=
-# 65 * 32=
-# 63 – 11=
-# 72 – 90=
-# 29 / 93=
+
+tehted = ['+','-','*','/']
+for _ in range(11):
+    i = random.randint(1,100)
+    j = random.randint(1,100)
+    tehe = random.choice(tehted)
+    if tehe=="+":
+        print(f"{i} {tehe} {j} = {i+j}")
+    elif tehe=="-":
+        print(f"{i} {tehe} {j} = {i-j}")
+    elif tehe=="*":
+        print(f"{i} {tehe} {j} = {i*j}")
+    else:
+        print(f"{i} {tehe} {j} = {round(i/j,2)}")
+
 # Täienda eelmist ülesannet ja kasutaja käest küsitakse vastust.
 # Õiged vastused loetakse kokku
 # Kui saab vähemalt poole punktid, siis saab A, muul juhul MA
