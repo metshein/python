@@ -89,11 +89,12 @@ for i in range(11):
 
 tehted = ['+','-','*','/']
 for _ in range(11):
-    i = random.randint(1,100)
-    j = random.randint(1,100)
+    i = random.randint(1,10)
+    j = random.randint(1,10)
     tehe = random.choice(tehted)
     if tehe=="+":
-        print(f"{i} {tehe} {j} = {i+j}")
+        print(f"{i} {tehe} {j} = ")
+        vastus = int(input("Vastus: "))
     elif tehe=="-":
         print(f"{i} {tehe} {j} = {i-j}")
     elif tehe=="*":
