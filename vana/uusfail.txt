@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-midagi sees ka
-
-uus rida
-kogemata lisasin juurde
-=======
-midagi sees ka
->>>>>>> parent of e7edba4... uue faili muutmine

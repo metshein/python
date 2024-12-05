@@ -1,1 +1,0 @@
-print("Tere, World, World!")
