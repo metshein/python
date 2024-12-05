@@ -9,8 +9,13 @@ import turtle
     Joone paksus 6
     Kiirus 0
 """
+#akna seaded
+aken = turtle.Screen()
+aken.setup(width=600,height=400)
+aken.title("Olümpiarõngad ja Imre Tard")
 
 turtle.speed(0)
+
 #sinine
 turtle.penup()
 turtle.goto(-200,100)
