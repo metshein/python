@@ -55,8 +55,14 @@ import random
 try:
     arv1 = random.randint(1,10)
     arv2 = random.randint(1,10)
-    vastus = int(input(f"Mis on {arv1} * {arv2} vastus.\nSisesta vastus: "))
-    
+    vastus = int(input(f"Mis on {arv1} * {arv2} vastus?\nSisesta vastus: "))
+    korrutis = arv1 * arv2
+    print(vastus)
+    print(korrutis)
+    if korrutis == vastus:
+        print("Õige")
+    else:
+        print("Vale")
 except:
     print("Viga sisestuses!")
 
