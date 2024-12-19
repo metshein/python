@@ -51,24 +51,42 @@ Matemaatika test (randint)
     Kasuta if ja else lauseid selleks, et kontrollida kasutaja sisestatud vastust.
 """
 import random
-
-try:
-    arv1 = random.randint(1,10)
-    arv2 = random.randint(1,10)
-    vastus = int(input(f"Mis on {arv1} * {arv2} vastus?\nSisesta vastus: "))
-    korrutis = arv1 * arv2
-    print(vastus)
-    print(korrutis)
-    if korrutis == vastus:
-        print("Õige")
-    else:
-        print("Vale")
-except:
-    print("Viga sisestuses!")
+import turtle
+# try:
+#     arv1 = random.randint(1,10)
+#     arv2 = random.randint(1,10)
+#     vastus = int(input(f"Mis on {arv1} * {arv2} vastus?\nSisesta vastus: "))
+#     korrutis = arv1 * arv2
+# 
+#     if korrutis == vastus:
+#         print("Õige")
+#     else:
+#         print("Vale")
+# except:
+#     print("Viga sisestuses!")
 
 """
 Mündiviskamise äraarvamine koos juhuslikkusega (and ja or)
-    Kirjuta programm, mis simuleerib mündiviskamist. Programm genereerib juhusliku tulemuse – “kiri” või “kull”, kasutades random.randint(0,1) funktsiooni. Programmi koostamisel pead importima import random mooduli ja kasutama randint() funktsiooni, et valida kahe võimaliku tulemuse vahel. Näiteks, kui randint(0, 1) annab tulemuseks 0, siis võib see tähendada “kirja”, ja 1 võib tähendada “kulli”.
+    Kirjuta programm, mis simuleerib mündiviskamist. Programm genereerib juhusliku tulemuse – “kiri” või “kull”,
+    0 KIRI
+    1 KULL
+
     Seejärel palub programm kasutajal arvata, kumb külg maandub ülespoole.
-    Kasuta if lauset, et kontrollida, kas kasutaja arvas õigesti. Kui arvas õigesti, siis joonista Turtle abil roheline ring; kui valesti, siis punane ring.
+    Kasuta if lauset, et kontrollida, kas kasutaja arvas õigesti.
+    Kui arvas õigesti, siis joonista Turtle abil roheline ring; kui valesti, siis punane ring.
 """
+try:
+    valik = random.randint(0,1)
+    arvamus = int(input("Vali kull 1 või kiri 0: "))
+    if valik == arvamus:
+        print("Arvasid ära")
+        turtle.color("green")
+        turtle.circle(50)
+    else:
+        print("Arvasid valesti")
+        turtle.color("red")
+        turtle.circle(50)
+    turtle.done()
+except:
+    print("Viga sisestuses!")
+
